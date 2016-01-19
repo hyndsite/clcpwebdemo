@@ -207,19 +207,30 @@ ul#menu {
 
 /* page elements
 ----------------------------------------------------------*/
+/* intro */
+
+.intro {
+    display: table;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: url(/Content/Images/intro-bg.png) no-repeat bottom center scroll;
+    background-size: cover;
+}
+
 /* featured */
 .featured {
     background-color: #fff;
 }
 
     .featured .content-wrapper {
-        background-color: #7ac0da;
-        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-        background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        color: #3e5667;
+        background-color: #c8c8c8;
+        background-image: -ms-linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
+        background-image: -o-linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #c8c8c8), color-stop(1, #a4d4e6));
+        background-image: -webkit-linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
+        background-image: linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
+        color: #c8c8c8;
         padding: 20px 40px 30px 40px;
     }
 
