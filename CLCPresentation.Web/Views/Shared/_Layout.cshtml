@@ -12,17 +12,14 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <p class="site-title"><a href="http//lockmedown.com">Lock Me Down.com</a></p>
                 </div>
                 <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
                     <nav>
                         <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li><a href="http://lockmedown.com/" target="_blank">Home</a></li>
+                            <li><a href="http://lockmedown.com/about" target="_blank">About</a></li>
+                            <li><a href="mailto:max@lockmedown.com" target="_blank">max@lockmedown.com</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -30,18 +27,11 @@
         </header>
         <div id="body">
             @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
+            <section class="content-wrapper clear-fix">
                 @RenderBody()
             </section>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
-
+        
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
     </body>

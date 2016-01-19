@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Transactions;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using CLCPresentation.Web.Filters;
+using CLCPresentation.Web.Models;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using CLCPresentation.Web.Filters;
-using CLCPresentation.Web.Models;
 
 namespace CLCPresentation.Web.Controllers
 {
@@ -20,7 +19,8 @@ namespace CLCPresentation.Web.Controllers
         //
         // GET: /Account/Login
 
-        [AllowAnonymous]
+
+        [RequireHttps]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -31,7 +31,7 @@ namespace CLCPresentation.Web.Controllers
         // POST: /Account/Login
 
         [HttpPost]
-        [AllowAnonymous]
+        [RequireHttps]
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
