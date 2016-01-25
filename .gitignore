@@ -3,3 +3,6 @@
 **properties/*
 **Metadata/*
 **.user
+**.orig
+**/PublishProfiles/*
+
