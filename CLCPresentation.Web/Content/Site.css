@@ -210,7 +210,7 @@ ul#menu {
 /* intro */
 
 .intro {
-    height: 1400px;
+    height: 1400px;  
     display: table;
     width: 100%;
     text-align: center;
@@ -231,7 +231,7 @@ ul#menu {
         background-image: -o-linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #c8c8c8), color-stop(1, #a4d4e6));
         background-image: -webkit-linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
-        background-image: linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);
+        /*background-image: linear-gradient(left, #c8c8c8 0%, #a4d4e6 100%);*/
         color: #c8c8c8;
         padding: 20px 40px 30px 40px;
     }
@@ -244,6 +244,13 @@ ul#menu {
             font-size: 1.1em;
         }
 
+.slogan {
+    
+}
+.slogan h1 {
+    font-size: 6em;
+    color: #cacac8;
+}
 /* page titles */
 hgroup.title {
     margin-bottom: 10px;
