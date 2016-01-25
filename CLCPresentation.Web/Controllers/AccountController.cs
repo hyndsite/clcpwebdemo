@@ -12,13 +12,12 @@ using WebMatrix.WebData;
 
 namespace CLCPresentation.Web.Controllers
 {
-    [Authorize]
+    
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
         //
         // GET: /Account/Login
-
 
         [RequireHttps]
         public ActionResult Login(string returnUrl)

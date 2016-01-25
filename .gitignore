@@ -1,0 +1,7 @@
+
+appsecrets.config
+**/obj/*
+**.suo
+**properties/*
+**Metadata/*
+**.user
