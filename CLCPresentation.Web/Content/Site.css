@@ -402,6 +402,11 @@ aside {
     display: inline;
 }
 
+/* register */
+
+.register {
+    margin: 0 25px;
+}
 /* contact */
 .contact h3 {
     font-size: 1.2em;
