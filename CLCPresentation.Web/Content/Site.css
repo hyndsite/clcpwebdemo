@@ -254,6 +254,7 @@ ul#menu {
 /* page titles */
 hgroup.title {
     margin-bottom: 10px;
+    margin-left: 25px;
 }
 
 hgroup.title h1, hgroup.title h2 {
@@ -353,6 +354,7 @@ aside {
     border-right: solid 2px #c8c8c8;
     float: left;
     width: 55%;
+    margin: 0 25px;
 }
 
     #loginForm .validation-error {
