@@ -251,8 +251,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <None Include="Properties\PublishProfiles\clc-this-baby - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\clc-this-baby - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\clc-wd - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\clc-wd - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\clcp-website - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\clcp-website - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
