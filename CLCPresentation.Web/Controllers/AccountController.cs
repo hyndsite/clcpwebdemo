@@ -36,6 +36,7 @@ namespace CLCPresentation.Web.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
             {
+                var m = model;
                 return RedirectToLocal(returnUrl);
             }
 
@@ -43,6 +44,8 @@ namespace CLCPresentation.Web.Controllers
             ModelState.AddModelError("", "The user name or password provided is incorrect.");
             return View(model);
         }
+
+
 
         //
         // POST: /Account/LogOff
