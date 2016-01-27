@@ -19,7 +19,7 @@ namespace CLCPresentation.Web.Controllers
         //
         // GET: /Account/Login
 
-        
+        [RequireHttps]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
