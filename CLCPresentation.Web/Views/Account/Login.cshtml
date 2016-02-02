@@ -11,7 +11,10 @@
 <section id="loginForm">
     <h2>Use a local account to log in.</h2>
     @{
-       <form action="https://sslgotchas/account/login">
+        <form action="https://sslgotchas.com/Account/Login" method="POST">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
             <fieldset>
                 <legend>Log in Form</legend>
                 <ol>
@@ -36,8 +39,8 @@
                 @Html.ActionLink("Register", "Register") if you don't have an account.
             </p>
         </form>
-@**@
-@*        using (Html.BeginForm("Login", "Account", new { actionURL, ViewBag.ReturnUrl }))*@
+
+@*        using (Html.BeginForm("Login", "Account", new { ViewBag.ReturnUrl }))*@
 @*        {*@
 @**@
 @*             @Html.AntiForgeryToken()*@
